@@ -52,3 +52,9 @@ def get_ai_response(user_input: str) -> str:
         return f"API Authentication Error: {error_msg}"
     except Exception as e:
         return f"Error communicating with AI server: {str(e)}"
+
+
+load_dotenv()
+api_key = os.getenv("GEMINI_API_KEY")
+
+print("DEBUG API KEY:", api_key)
