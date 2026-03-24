@@ -1,0 +1,14 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Discover <span class="gradient-text">Incredible India</span> With Us</h1>
+            <p>Experience the ultimate cultural renaissance. From the snow-capped Himalayas to the majestic Taj Mahal and the serene backwaters of Kerala.</p>
+            <a href="{% url 'destinations' %}" style="text-decoration: none;">
+                <button class="cta-button">Explore Packages</button>
+            </a>
+        </div>
+    </header>
+{% endblock content %}

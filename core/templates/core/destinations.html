@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="destinations" style="padding-top: 150px; min-height: 100vh;">
+        <h2>Explore Our <span class="gradient-text">Top Packages</span></h2>
+        <div class="cards-container">
+            <div class="card glass-card" style="padding: 1rem;">
+                <img src="{% static 'core/images/taj.png' %}" alt="Taj Mahal" style="width: 100%; border-radius: 15px; margin-bottom: 1rem; height: 180px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <div style="padding: 0 0.5rem;">
+                    <h3>Golden Triangle</h3>
+                    <p>Delhi, Agra, and Jaipur. Witness the majesty of the Taj Mahal and royal Rajput palaces.</p>
+                    <div class="price">From $1,200</div>
+                </div>
+            </div>
+            
+            <div class="card glass-card" style="padding: 1rem;">
+                <img src="{% static 'core/images/kerala.png' %}" alt="Kerala Backwaters" style="width: 100%; border-radius: 15px; margin-bottom: 1rem; height: 180px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <div style="padding: 0 0.5rem;">
+                    <h3>Kerala Backwaters</h3>
+                    <p>A serene 7-day retreat on luxury houseboats amidst lush green palm-fringed waters.</p>
+                    <div class="price">From $1,500</div>
+                </div>
+            </div>
+            
+            <div class="card glass-card" style="padding: 1rem;">
+                <img src="{% static 'core/images/goa.png' %}" alt="Goa Beach" style="width: 100%; border-radius: 15px; margin-bottom: 1rem; height: 180px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <div style="padding: 0 0.5rem;">
+                    <h3>Goan Getaway</h3>
+                    <p>Sun, sand, and Portuguese heritage. A 4-day vibrant and relaxing beach experience.</p>
+                    <div class="price">From $800</div>
+                </div>
+            </div>
+            
+            <div class="card glass-card" style="padding: 1rem;">
+                <img src="{% static 'core/images/rajasthan.png' %}" alt="Rajasthan Palace" style="width: 100%; border-radius: 15px; margin-bottom: 1rem; height: 180px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <div style="padding: 0 0.5rem;">
+                    <h3>Rajasthan Royal Odyssey</h3>
+                    <p>10 days of heritage stays in Udaipur and Jodhpur. Experience the magnificent forts.</p>
+                    <div class="price">From $2,500</div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
